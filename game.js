@@ -49,6 +49,8 @@ guessButton.addEventListener('click', () => {
   // Set the correct disabled state for the buttons
   guessButton.setAttribute('disabled', true)
   nextRoundButton.removeAttribute('disabled');
+  //MY CODE
+  alert("You are " + getAbsoluteDistance(currentHumanGuess, target) + " numbers away from the target!")
 });
 
 nextRoundButton.addEventListener('click', () => {

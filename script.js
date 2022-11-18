@@ -30,3 +30,8 @@ function advanceRound() {
     currentRoundNumber += 1
 }
 
+function getAbsoluteDistance(currentHumanGuess, target) {
+   return Math.abs(currentHumanGuess - target)
+   
+}
+
