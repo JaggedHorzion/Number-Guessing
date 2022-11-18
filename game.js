@@ -59,8 +59,6 @@ guessButton.addEventListener('click', () => {
   } else {
     alert("You are " + getAbsoluteDistance(currentHumanGuess, target) + " numbers away from the target!")
   }
-
-  
 });
 
 nextRoundButton.addEventListener('click', () => {
