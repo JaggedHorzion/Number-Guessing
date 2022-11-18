@@ -50,7 +50,17 @@ guessButton.addEventListener('click', () => {
   guessButton.setAttribute('disabled', true)
   nextRoundButton.removeAttribute('disabled');
   //MY CODE
-  alert("You are " + getAbsoluteDistance(currentHumanGuess, target) + " numbers away from the target!")
+  if (humanGuessInput.value <= 0) {
+    alert("Please only choose between 0 and 9!")
+    location.reload()
+  } else if (humanGuessInput.value >= 10) {
+    alert("Please only choose between 0 and 9!")
+    location.reload()
+  } else {
+    alert("You are " + getAbsoluteDistance(currentHumanGuess, target) + " numbers away from the target!")
+  }
+
+  
 });
 
 nextRoundButton.addEventListener('click', () => {
