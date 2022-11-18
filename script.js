@@ -34,4 +34,3 @@ function getAbsoluteDistance(currentHumanGuess, target) {
     return Math.abs(currentHumanGuess - target)
 
 }
-
